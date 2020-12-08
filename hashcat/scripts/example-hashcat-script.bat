@@ -1,5 +1,6 @@
-:: v1
-cd "C:\Users\hashcat-6.0.0\"
+#!/bin/bash
+OUR_PWN_PATH=/opt/pwnagotchi-tools/
+
 hashcat -a 0 -m 16800 --session example_6517 --hwmon-temp-abort=100 -w 2 --potfile-path "C:\Users\pwnagotchi-tools\hashcat\hashcat-potfile.txt" -o "C:\Users\pwnagotchi-tools\hashcat\hashcat-output.txt" "C:\Users\pwnagotchi-tools\handshakes\pmkid\example.pmkid" -S "C:\Users\wordlists\known-wpa-passwords.txt" -r "C:\Users\pwnagotchi-tools\hashcat\rules\quick-ssid.rule"
 hashcat -a 0 -m 16800 --session example_8719 --hwmon-temp-abort=100 -w 2 --potfile-path "C:\Users\pwnagotchi-tools\hashcat\hashcat-potfile.txt" -o "C:\Users\pwnagotchi-tools\hashcat\hashcat-output.txt" "C:\Users\pwnagotchi-tools\handshakes\pmkid\example.pmkid" -S "C:\Users\wordlists\known-wpa-passwords.txt" -r "C:\Users\pwnagotchi-tools\hashcat\rules\unix-ninja-leetspeak.rule"
 hashcat -a 0 -m 16800 --session example_2143 --hwmon-temp-abort=100 -w 2 --potfile-path "C:\Users\pwnagotchi-tools\hashcat\hashcat-potfile.txt" -o "C:\Users\pwnagotchi-tools\hashcat\hashcat-output.txt" "C:\Users\pwnagotchi-tools\handshakes\pmkid\example.pmkid" -S "C:\Users\wordlists\known-wpa-passwords.txt" -r "C:\Users\pwnagotchi-tools\hashcat\rules\rockyou-30000.rule"
